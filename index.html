@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Google</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="/home/kogepan/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/home/kogepan/node_modules/@fortawesome/fontawesome-free/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/home/kogepan/node_modules/@fortawesome/fontawesome-free/css/solid.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main">
@@ -23,8 +35,14 @@
                     type="search"
                     maxlength="2048"
                     class="inputsearch"
+                    value="build this webpage"
                     autofocus
                   />
+                  <button
+                    class="close-icon"
+                    type="reset"
+                    title="Clear"
+                  ></button>
                   <span>
                     <svg
                       class="lupa"
@@ -54,12 +72,26 @@
         </div>
         <div class="nav">
           <ul>
-            <li><a href="#">All</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Maps</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">More</a></li>
+            <li>
+              <a href="#" class="active"><i class="fas fa-search"></i> All</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> Videos</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Maps</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-image"></i> Images</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-newspaper"></i> News</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-circle-down"></i> More</a>
+            </li>
+          </ul>
+          <ul>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Tools</a></li>
           </ul>

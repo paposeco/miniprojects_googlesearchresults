@@ -29,7 +29,7 @@ header {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #dadce0;
-  height: 135px;
+  height: 137px;
 }
 
 .headermain {
@@ -61,8 +61,11 @@ header {
 }
 
 .nav {
-  width: 600px;
-  padding-left: 100px;
+  width: 850px;
+  padding-left: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .nav > ul {
   display: flex;
@@ -76,7 +79,17 @@ header {
   font-size: 14px;
   font-family: Google Sans, arial, sans-serif;
   color: #5f6368;
-  padding: 10px;
+  padding: 10px 4px;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active,
+.nav:active {
+  border-bottom: solid 3px #2b7de9;
 }
 
 svg.sixdots {
@@ -147,8 +160,23 @@ input[type="search"] {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
 }
-input[type="search"]:after {
-  content: "x";
+
+.close-icon {
+  background-color: white;
+  border: none;
+  width: 5px;
+  padding: 0;
+}
+
+.close-icon:after {
+  content: "X";
+  color: #80868b;
+}
+
+button.close-icon:hover {
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .searchbox:hover {
@@ -169,7 +197,7 @@ input[type="search"]:after {
 svg.lupa {
   width: 35px;
   padding-left: 10px;
-  margin-left: 30px;
+  margin-left: 0px;
   padding-top: 2px;
   margin-top: 6px;
   border-left: 1px solid #dadce0;
@@ -184,7 +212,7 @@ svg.lupa > path {
   box-shadow: none;
   height: 41px;
   margin-left: 20px;
-  width: 85%;
+  width: 82%;
 }
 
 .inputsearch:focus {
