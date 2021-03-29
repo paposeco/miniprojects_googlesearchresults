@@ -6,7 +6,7 @@ html,
 body {
   background-color: white;
   min-width: 400px;
-  height: 100vh;
+  /*  height: 100vh;*/
   max-height: 100vh;
   font-family: arial, sans-serif;
   box-sizing: border-box;
@@ -14,7 +14,21 @@ body {
   margin: 0;
 }
 
-.main {
+h2 {
+  font-size: 20px;
+}
+
+div-body {
+  display: flex;
+  flex-direction: column;
+}
+
+div-main {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.div-header {
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
@@ -87,9 +101,27 @@ header {
   cursor: pointer;
 }
 
-.active,
-.nav:active {
+.active {
   border-bottom: solid 3px #2b7de9;
+}
+
+#linkcolor {
+  color: #2b7de9 !important;
+}
+
+.fa-gradient {
+  background: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 0, 1),
+      rgba(255, 255, 0, 0) 55%
+    ),
+    -webkit-linear-gradient(135deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0) 55%),
+    -webkit-linear-gradient(225deg, rgba(51, 204, 51, 1), rgba(51, 204, 51, 0)
+          55%),
+    -webkit-linear-gradient(315deg, rgba(255, 51, 0, 1), rgba(255, 51, 0, 0) 55%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 svg.sixdots {
@@ -316,6 +348,61 @@ footer {
   max-heigth: 160px;
 }
 
+main {
+  width: 650px;
+  margin-left: 164px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: arial, sans-serif;
+}
+.timetoresults {
+  color: #5f6368;
+  font-size: 14px;
+  font-family: Google Sans, arial, sans-serif;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/*estas aqui */
+.resultlink {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.resultlink a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.resultlink a::after {
+  color: rgba(0, 0, 0, 0.54);
+  content: "▼";
+}
+.sublink {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+article > h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 > a {
+  text-decoration: none;
+  color: #1a0dab;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+}
+
+h2 + p {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* responsive */
 @media (max-width: 430px) {
   .searchbox {
     width: 80vw;
