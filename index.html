@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1" />  doesn't scale on the original one either-->
     <title>Google</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
@@ -44,7 +44,12 @@
               </form>
             </div>
             <div class="rightheader">
-              <a href="#" class="moreoptions"> </a>
+              <a href="#" class="moreoptions"
+                ><span class="dots">
+                  <i class="fas fa-ellipsis-h dotscloser"></i>
+                  <i class="fas fa-ellipsis-h dotscloser"></i>
+                  <i class="fas fa-ellipsis-h dotscloser"></i></span
+              ></a>
               <button type="button" id="signin">Sign in</button>
             </div>
           </div>
