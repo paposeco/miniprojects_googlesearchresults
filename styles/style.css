@@ -292,7 +292,7 @@ footer {
   background-color: rgb(242, 242, 242);
   color: rgba(0, 0, 0, 0.54);
   width: 100%;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .centercontent {
@@ -306,16 +306,41 @@ footer {
   flex-shrink: 0;
 }
 
-#country {
+.country {
   border-bottom: 1px solid #dadce0;
   font-size: 14px;
   padding: 2px 30px 2px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.firstp {
+  margin-left: 164px;
+  border-right: 1px solid grey;
+  margin-right: 15px;
+  padding-right: 20px;
+}
+
+.firstp + p::before {
+  content: "●";
+  font-size: 20px;
+  padding-right: 2px;
+}
+
+.country a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 #info {
   display: flex;
+  margin-left: 164px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+
+  gap: 23px;
   padding: 12px 30px 12px 30px;
 }
 
@@ -391,8 +416,8 @@ article > h2 {
 }
 
 article {
-  margin-top: 33px;
-  margin-bottom: 33px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h2 > a {
@@ -419,8 +444,10 @@ h2 + p {
 #id-alternatives {
   border: solid 1px lightgrey;
   border-radius: 10px;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-top: -15px;
+  width: 90%;
 }
 .alternatives {
   display: flex;
@@ -428,19 +455,212 @@ h2 + p {
   gap: 20px;
 }
 
-article > h4 {
-  margin-bottom: 10px;
-  margin-top: 10px;
+.closesuggestions > h5 {
   color: grey;
+  margin: 0;
+}
+
+.close-icon-suggestions {
+  padding: 0;
+  margin: 0;
+}
+
+.closesuggestions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .alternatives ul {
-  padding-left: 0px;
+  padding-left: 10px;
   margin-top: 0px;
 }
 
 .alternatives li {
   list-style: none;
+}
+
+.alternatives a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.alsoask h2,
+h3 {
+  font-weight: normal;
+  border-bottom: solid 1px lightgrey;
+  padding-bottom: 12px;
+}
+.arrow-flex {
+  display: flex;
+  flex-direction: row;
+  /*  align-items: center;*/
+  justify-content: space-between;
+}
+
+.arrow-flex a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrows a {
+  color: grey;
+}
+.titles {
+  flex-grow: 1;
+}
+
+.titles a {
+  color: black;
+}
+
+.arrows p {
+  border-bottom: solid 1px lightgrey;
+  line-height: 1em;
+  margin: 0;
+  padding-bottom: 17px;
+}
+.arrows {
+  font-size: 30px;
+  color: grey;
+}
+
+.alsoask h2 {
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.alsoask h3 {
+  font-size: 16px;
+}
+
+#feedback {
+  z-index: 1;
+  font-size: 12px;
+  margin-top: -23px;
+  background-color: white;
+  padding-left: 10px;
+  position: relative;
+  width: 70px;
+  left: 585px;
+  color: grey;
+}
+
+.relatedsearches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.relatedsearches p {
+  /* padding: 18px; */
+  margin: 0;
+}
+
+.relatedsearch {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  background-color: rgb(242, 242, 242);
+  border-radius: 30px;
+  align-items: center;
+  min-height: 60px;
+}
+
+.relatedsearch span {
+  padding-left: 15px;
+  margin-right: 15px;
+  color: grey;
+}
+
+.relatedsearch span a {
+  color: grey;
+}
+
+.relatedsearch p {
+  margin-left: 15px;
+}
+
+.relatedsearch a {
+  text-decoration: none;
+  color: black;
+}
+
+.searchpages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.searchpages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .searchpages li { */
+/*   width: 25px; */
+/* } */
+
+.letterO {
+  width: 20px;
+}
+
+.searchpagesli {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20px;
+}
+
+.searchpagesli li {
+  width: 15px;
+}
+
+.searchpagesliletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20px;
+}
+
+.searchpagesli a {
+  text-decoration: none;
+  color: #2b7de9;
+}
+
+.searchpagesliletter a {
+  text-decoration: none;
+  color: #ffce44;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.blueL {
+  color: #2b7de9;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.greenL {
+  color: #1aa260;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.redL {
+  color: #de5246;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.searchpagesli a:hover {
+  text-decoration: underline;
 }
 
 /* responsive */
