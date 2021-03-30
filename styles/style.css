@@ -220,6 +220,17 @@ button.close-icon:hover {
   border-color: rgba(223, 225, 229, 0);
 }
 
+.searchbox:focus-visible {
+  outline: none;
+}
+
+.searchbox > span {
+  color: #2b7de9;
+  font-size: 15px;
+  padding-left: 16px;
+  border-left: 1px solid #dadce0;
+}
+
 #logo {
   display: flex;
   flex-direction: column;
@@ -228,19 +239,6 @@ button.close-icon:hover {
 
 #logo > img {
   height: 30px;
-}
-
-svg.lupa {
-  width: 35px;
-  padding-left: 10px;
-  margin-left: 0px;
-  padding-top: 2px;
-  margin-top: 6px;
-  border-left: 1px solid #dadce0;
-}
-
-svg.lupa > path {
-  fill: #2b7de9;
 }
 
 .inputsearch {
