@@ -224,7 +224,7 @@ button.close-icon:hover {
   outline: none;
 }
 
-.searchbox > span {
+.magnifglass {
   color: #2b7de9;
   font-size: 15px;
   padding-left: 16px;
@@ -515,13 +515,14 @@ h3 {
 
 .arrows p {
   border-bottom: solid 1px lightgrey;
-  line-height: 1em;
-  margin: 0;
-  padding-bottom: 17px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  padding-right: 5px;
 }
-.arrows {
-  font-size: 30px;
+.arrows a {
   color: grey;
+  font-size: 16px;
 }
 
 .alsoask h2 {
