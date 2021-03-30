@@ -220,10 +220,6 @@ button.close-icon:hover {
   border-color: rgba(223, 225, 229, 0);
 }
 
-.searchbox:focus-visible {
-  outline: none;
-}
-
 .magnifglass {
   color: #2b7de9;
   font-size: 15px;
@@ -251,6 +247,10 @@ button.close-icon:hover {
 
 .inputsearch:focus {
   border: none;
+}
+
+.inputsearch:focus-visible {
+  outline: none;
 }
 
 .buttons {
