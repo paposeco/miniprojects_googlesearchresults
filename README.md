@@ -1,4 +1,4 @@
-This is an exercise for the Odin Project.
+This is an [exercise](https://paposeco.github.io/miniprojects_googlesearchresults/) for the Odin Project.
 
 It was a good exercise for playing around with the Flex layout.
 
